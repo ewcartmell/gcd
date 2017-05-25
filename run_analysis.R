@@ -58,4 +58,5 @@ colnames(spec_data)[1:68] <- c('tBodyAcc-mean()-X', 'tBodyAcc-mean()-Y', 'tBodyA
 ## Step 5 - Create a second, independent tidy data set with the average of each variable for each activity and each subject.
 spec_data <- group_by(spec_data, Activity, Subject)
 tidy_data <- summarize_each(spec_data, funs(mean))
+
 write.table(tidy_data,"/Users/edmundcartmell/desktop/neddocs/r/gcd_final/tidy_data.txt")

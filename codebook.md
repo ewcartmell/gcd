@@ -2,7 +2,6 @@
 
 This code book summarizes the resulting data fields in `tidy_file.txt`.
 
-
 ## Measures
 
 * 'tBodyAcc-mean()-X'
